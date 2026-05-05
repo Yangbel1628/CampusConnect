@@ -2,12 +2,12 @@ import { colors } from "../styles/theme";
 
 export const stories = [
   { emoji: "➕", label: "Add Story", isAdd: true },
-  { emoji: "👩", label: "Priya" },
-  { emoji: "👨", label: "Arjun" },
+  { emoji: "👩", label: "Mamta" },
+  { emoji: "👨", label: "Rohit" },
   { emoji: "💻", label: "Coding Club", grad: "linear-gradient(135deg,#FFD93D,#FF6B6B)" },
   { emoji: "🎉", label: "TechFest", grad: "linear-gradient(135deg,#6BCB77,#4F6EF7)" },
   { emoji: "📷", label: "Photo Club", grad: "linear-gradient(135deg,#a855f7,#ec4899)" },
-  { emoji: "🧑", label: "Sneha" },
+  { emoji: "🧑", label: "Abhishek" },
 ];
 
 export const posts = [
@@ -30,7 +30,7 @@ The timetable for the upcoming Semester 6 examinations has been officially publi
     reactions: "1,240 views",
     statsRight: "84 comments",
     comments: [
-      { avatar: "👩", avatarBg: "#DBEAFE", author: "Priya Mehra", text: "Is the clash form available online too?", likes: "Like" },
+      { avatar: "👩", avatarBg: "#DBEAFE", author: "Mamta sood", text: "Is the clash form available online too?", likes: "Like" },
     ],
   },
   {
@@ -63,10 +63,10 @@ The timetable for the upcoming Semester 6 examinations has been officially publi
     id: 3,
     avatarGrad: "linear-gradient(135deg,#FF6B6B,#FFD93D)",
     avatarEmoji: "👩",
-    author: "Priya Mehra",
+    author: "Yangbel khampa",
     tagType: "academic",
     tag: "📚 ACADEMIC",
-    sub: "CSE • 3rd Year",
+    sub: "BCA(fsd) • 3rd Year",
     time: "5 hours ago",
     audience: "🏫 CSE Dept",
     text: "Quick check before the exam — which topic are you most nervous about? Let's form study groups based on results! 📊",
@@ -88,10 +88,10 @@ The timetable for the upcoming Semester 6 examinations has been officially publi
     id: 4,
     avatarGrad: "linear-gradient(135deg,#6BCB77,#4F6EF7)",
     avatarEmoji: "🧑",
-    author: "Sneha Kulkarni",
+    author: "Rohit Khati",
     tagType: "social",
     tag: "✨ SOCIAL",
-    sub: "CSE • 3rd Year",
+    sub: "BCA(fsd) • 3rd Year",
     time: "Yesterday",
     audience: "🌐 Everyone",
     text: `Best evening at the Annual Photography Exhibition 📸 Our club worked so hard on this and seeing it all come together was magical! <span style="color:#4F6EF7;font-weight:700;">#CampusLife</span> <span style="color:#4F6EF7;font-weight:700;">#PhotoExhibition</span>`,

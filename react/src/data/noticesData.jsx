@@ -1,0 +1,187 @@
+export const noticesData = [
+  {
+    id: 1,
+    type: "urgent",
+    strip: "🚨 URGENT — Action Required",
+    isPinned: true,
+    isUnread: true,
+    avatarBg: "#FEE2E2",
+    avatarEmoji: "🏛️",
+    title: "Semester 6 Examination Schedule — 2025",
+    source: "College Administration",
+    time: "2 hours ago",
+    dept: { label: "🌐 All Students", className: "all" },
+    description:
+      "The timetable for Semester 6 examinations has been officially published. Exams begin from March 18, 2025. Students must report any schedule clashes to their department office before March 5, 2025.",
+    deadline: { label: "⏰ Clash reporting deadline: March 5, 2025 — 5 days left", type: "urgent" },
+    attachments: [
+      { label: "📄 Exam_Schedule_Sem6.pdf", size: "340 KB" },
+      { label: "📋 Clash_Reporting_Form.docx", size: "48 KB" },
+    ],
+    stats: { views: "1,240", comments: "84", downloads: "623" },
+    actions: [
+      { label: "💬 Comment" },
+      { label: "🔖 Save" },
+      { label: "📥 Download", primary: true },
+    ],
+  },
+  {
+    id: 2,
+    type: "important",
+    strip: "⚠️ IMPORTANT — Deadline Approaching",
+    isPinned: true,
+    isUnread: true,
+    avatarBg: "#FEF3C7",
+    avatarEmoji: "💰",
+    title: "Last Date for Semester Fee Payment — March 10",
+    source: "Accounts Department",
+    time: "1 day ago",
+    dept: { label: "🌐 All Students", className: "all" },
+    description:
+      "Students who have not yet paid their semester fees are reminded that the last date for payment without late fine is March 10, 2025. After this date a late fine of ₹500/day will be applicable.",
+    deadline: { label: "⏰ Payment deadline: March 10, 2025 — 10 days left", type: "warning" },
+    attachments: [{ label: "🔗 Pay via Student Portal" }],
+    stats: { views: "2,100", comments: "32" },
+    actions: [
+      { label: "💬 Comment" },
+      { label: "🔖 Save" },
+      { label: "🔗 Pay Now", primary: true },
+    ],
+  },
+  {
+    id: 3,
+    type: "info",
+    strip: "ℹ️ INFO",
+    isPinned: false,
+    avatarBg: "#DBEAFE",
+    avatarEmoji: "📚",
+    title: "Library Extended Hours During Exam Season",
+    source: "Central Library",
+    time: "Yesterday",
+    dept: { label: "🌐 All Students", className: "all" },
+    description:
+      "The Central Library will remain open until 11:00 PM on weekdays and 9:00 PM on weekends from March 10 through April 15, 2025 to support students during the examination period.",
+    stats: { views: "890", comments: "14" },
+    actions: [{ label: "💬 Comment" }, { label: "🔖 Save" }],
+  },
+  {
+    id: 4,
+    type: "general",
+    strip: "📣 ANNOUNCEMENT",
+    isPinned: false,
+    avatarBg: "#D1FAE5",
+    avatarEmoji: "⚽",
+    title: "Annual Sports Day — Registrations Open!",
+    source: "Sports Department",
+    time: "2 days ago",
+    dept: { label: "🌐 All Students", className: "all" },
+    description:
+      "Annual Sports Day will be held on April 5, 2025. Registrations are now open for Athletics, Cricket, Football, Basketball, Badminton, and Table Tennis. Each student can register for up to 2 events.",
+    deadline: { label: "✅ Registration open until: March 20 — 20 days left", type: "safe" },
+    attachments: [
+      { label: "📋 Sports_Events_List.pdf" },
+      { label: "🔗 Register on Portal" },
+    ],
+    stats: { views: "740", comments: "56" },
+    actions: [
+      { label: "💬 Comment" },
+      { label: "🔗 Register", primary: true },
+    ],
+  },
+  {
+    id: 5,
+    type: "info",
+    strip: "ℹ️ DEPARTMENT NOTICE",
+    isPinned: false,
+    avatarBg: "#DBEAFE",
+    avatarEmoji: "💻",
+    title: "CSE Project Submission Guidelines — Final Year",
+    source: "CSE Department",
+    time: "3 days ago",
+    dept: { label: "💻 CSE Only", className: "cse" },
+    description:
+      "Final year CSE students must submit their project reports in the prescribed format by March 25. The format has been revised this year — please download and use only the updated template.",
+    attachments: [
+      { label: "📄 Project_Report_Template_2025.docx" },
+      { label: "📋 Submission_Guidelines.pdf" },
+    ],
+    stats: { views: "312", comments: "28", downloads: "198" },
+    actions: [
+      { label: "💬 Comment" },
+      { label: "📥 Download", primary: true },
+    ],
+  },
+];
+
+export const notificationsData = {
+  today: [
+    {
+      id: 1, unread: true, iconBg: "#FFF3CD", icon: "📢",
+      msg: "<strong>Official Notice:</strong> Semester 6 exam schedule has been published by <span style='color:#4F6EF7;font-weight:700;'>College Administration</span>",
+      preview: "Exams begin from March 18, 2025. Report clashes before March 5…",
+      time: "🕐 2 hours ago · Official Notice",
+      actions: [{ label: "📥 Download Schedule" }, { label: "👁️ View Notice" }],
+    },
+    {
+      id: 2, unread: true, iconBg: "#D1FAE5", icon: "🎉",
+      msg: "<strong>CampusHack 2025</strong> is happening in <strong>3 days</strong>! You've RSVP'd — don't forget to form your team.",
+      time: "🕐 22 minutes ago · Event Reminder",
+      actions: [{ label: "📅 View Event" }, { label: "👥 Find Teammates" }],
+    },
+    {
+      id: 3, unread: true, iconBg: "#FCE7F3", icon: "❤️",
+      msg: "<strong>Priya Mehra</strong>, <strong>Arjun Nair</strong> and <strong>10 others</strong> liked your post about the Photography Exhibition",
+      preview: '"Best evening at the Annual Photography Exhibition 📸 Our club worked so hard on this…"',
+      time: "🕐 1 hour ago · Social",
+    },
+    {
+      id: 4, unread: true, iconBg: "#EDE9FE", icon: "🤝",
+      msg: "<strong>Vikram Singh</strong> sent you a friend request — CSE, 3rd Year · 14 mutual friends",
+      time: "🕐 3 hours ago · Friend Request",
+      actions: [
+        { label: "✓ Accept", type: "accept" },
+        { label: "✕ Decline" },
+        { label: "👤 View Profile" },
+      ],
+    },
+  ],
+  yesterday: [
+    {
+      id: 5, unread: false, iconBg: "#EDE9FE", icon: "💼",
+      msg: "New internship matching your profile: <span style='color:#4F6EF7;font-weight:700;'>Google Summer Internship 2025</span> — Deadline March 1",
+      time: "Yesterday at 4:15 PM · Career Alert",
+      actions: [{ label: "💼 View & Apply" }],
+    },
+    {
+      id: 6, unread: false, iconBg: "#DBEAFE", icon: "📚",
+      msg: "<strong>Arjun Nair</strong> answered your doubt in OS Exam Prep group",
+      preview: '"A semaphore is a signaling mechanism that can allow multiple threads…"',
+      time: "Yesterday at 2:30 PM · Academic",
+      actions: [{ label: "👁️ See Answer" }],
+    },
+    {
+      id: 7, unread: false, iconBg: "#FCE7F3", icon: "💬",
+      msg: '<strong>Sneha Kulkarni</strong> commented on your post: <em>"Amazing photos Rahul! 🔥"</em>',
+      time: "Yesterday at 11:00 AM · Comment",
+    },
+    {
+      id: 8, unread: false, iconBg: "#D1FAE5", icon: "📋",
+      msg: "<strong>Coding Club</strong> posted a new resource: <span style='color:#4F6EF7;font-weight:700;'>Hackathon Prep Guide 2025.pdf</span>",
+      time: "Yesterday at 9:45 AM · Club Update",
+      actions: [{ label: "📥 Download" }],
+    },
+  ],
+  earlier: [
+    {
+      id: 9, unread: false, iconBg: "#FEF3C7", icon: "⚠️",
+      msg: "<strong>Fee Payment Reminder:</strong> Semester fee deadline is March 10 — <span style='color:#4F6EF7;font-weight:700;'>Pay now</span> to avoid late fines",
+      time: "2 days ago · Official Notice",
+    },
+    {
+      id: 10, unread: false, iconBg: "#EDE9FE", icon: "🏆",
+      msg: "Your study group <strong>OS Exam Prep</strong> now has <strong>12 members</strong>! A new session has been scheduled for March 12.",
+      time: "3 days ago · Study Group",
+      actions: [{ label: "👥 View Group" }],
+    },
+  ],
+};
